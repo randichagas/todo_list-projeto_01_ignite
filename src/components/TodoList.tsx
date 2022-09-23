@@ -14,12 +14,7 @@ interface Todo {
 }
 
 export function TodoList() {
-  const [todos, setTodos] = useState<Todo[]>([
-    { id: uuidv4(), content: "Quisquam nobis quae, asperiores repellendus tenetur ipsa distinctio recusandae eos atque! Quisquam nobis quae, asperiores repellendus tenetur ipsa distinctio recusandae eos atque!" },
-    { id: uuidv4(), content: "Comer" },
-    { id: uuidv4(), content: "Dormir" },
-    { id: uuidv4(), content: "Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer."}
-  ])
+  const [todos, setTodos] = useState<Todo[]>([])
   const [todosCompleted, setTodosCompleted] = useState<Todo[]>([])
   const [newTodoText, setNewTodoText] = useState('')
 
