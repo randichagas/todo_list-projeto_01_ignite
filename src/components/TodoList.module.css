@@ -1,0 +1,111 @@
+.addTodoForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  gap: .5rem;
+}
+
+.addTodoForm input {
+  padding: 1rem;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  flex: 1;
+  outline: transparent;
+}
+
+.addTodoForm input::placeholder {
+  color: var(--gray-300);
+}
+
+.addTodoForm input:focus {
+  border-color: var(--purple-dark);
+}
+
+.addTodoForm button {
+  min-width: 5.625rem;
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  cursor: pointer;
+
+  transition: background-color .2s;
+}
+
+.addTodoForm button:not(:disabled):hover {
+  background-color: var(--blue);
+}
+
+.addTodoForm button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.todosInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todosInfo strong {
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+}
+
+.todosInfo span {
+  padding: 0.125rem 0.5rem;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 0.9375rem;
+}
+
+.todosCreated, .todosDone {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.todosCreated strong {
+  color: var(--blue);
+}
+
+.todosDone strong {
+  color: var(--purple);
+}
+
+.todoList {
+  margin-block: 1.5rem;
+}
+
+.noTodos {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 0.5rem;
+}
+
+.noTodos p {
+  margin-top: 1rem;
+  color: var(--gray-300);
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 75%;
+  }
+}

@@ -1,0 +1,88 @@
+.todo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.todo + .todo {
+  margin-top: 0.75rem;
+}
+
+.todoContent {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+}
+
+.checkboxUnchecked, .checkboxChecked {
+  margin: 3.27px;
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  color: white;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color .2s, background-color .2s;
+}
+
+.checkboxUnchecked {
+  background-color: transparent;
+  border: 2px solid var(--blue);
+}
+
+.checkboxUnchecked:hover {
+  border-color: var(--blue-dark);
+  background-color: rgba(30, 111, 159, 0.2);
+}
+
+.checkboxChecked {
+  background-color: var(--purple-dark);
+  border: none;
+}
+
+.checkboxChecked:hover {
+  background-color: var(--purple);
+  border: none;
+  opacity: 1;
+}
+
+.checkmarkContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.checkboxLabel {
+  color: var(--gray-100);
+  font-size: .875rem;
+  line-height: 140%;
+  cursor: pointer;
+  align-self: center;
+}
+
+.checkboxChecked + .checkboxLabel {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.deleteButton {
+  background: transparent;
+  border: none;
+  color: var(--gray-300);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 4px;
+  transition: background-color .2s;
+}
+
+.deleteButton:hover {
+  background-color: var(--gray-400);
+}
+
+.deleteButton:hover svg path {
+  fill: var(--danger)
+}
