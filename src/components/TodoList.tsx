@@ -68,6 +68,7 @@ export function TodoList() {
           value={newTodoText} 
           onChange={handleNewTodoChange}
           onInvalid={handleNewTodoInvalid}
+          autoComplete="off"
           required
         />
         <button type="submit" disabled={isNewTodoEmpty}>
