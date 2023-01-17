@@ -1,12 +1,9 @@
 import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react'
-
 import { Todo } from './Todo'
-
 import {v4 as uuidv4} from 'uuid'
 
-import styles from './TodoList.module.css'
-
 import clipboard from '../assets/clipboard.svg'
+import styles from './TodoList.module.css'
 
 interface Todo {
   id: string
@@ -110,7 +107,6 @@ export function TodoList() {
             <Todo
               key={id} 
               todo={{id, content}}
-              // content={content}
               onCheckTodo={checkTodo}
               onDeleteTodo={deleteTodo}
             />  

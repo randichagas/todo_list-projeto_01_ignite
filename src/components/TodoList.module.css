@@ -14,24 +14,17 @@
   border-radius: 8px;
   font-size: 0.875rem;
   flex: 1;
-  outline: transparent;
+  /* outline: transparent; */
 }
-
-/* input:-internal-autofill-selected {
-  background-color: blue;
-} */
-
-/* input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 100px var(--gray-500) inset !important;
-  -webkit-text-fill-color: var(--gray-100) !important
-} */
 
 .addTodoForm input::placeholder {
   color: var(--gray-300);
 }
 
 .addTodoForm input:focus {
-  border: 1.5px solid var(--purple-dark);
+  /* border: 1px solid var(--purple-dark); */
+  outline: transparent;   
+  box-shadow: 0 0 0 1.5px var(--purple-dark)
 }
 
 .addTodoForm button {
